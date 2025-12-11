@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["DM Sans", "system-ui", "sans-serif"],
+        sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -50,6 +50,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -60,32 +72,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Note colors
-        "note-yellow": {
-          DEFAULT: "hsl(var(--note-yellow))",
-          dark: "hsl(var(--note-yellow-dark))",
-        },
-        "note-blue": {
-          DEFAULT: "hsl(var(--note-blue))",
-          dark: "hsl(var(--note-blue-dark))",
-        },
-        "note-green": {
-          DEFAULT: "hsl(var(--note-green))",
-          dark: "hsl(var(--note-green-dark))",
-        },
-        "note-pink": {
-          DEFAULT: "hsl(var(--note-pink))",
-          dark: "hsl(var(--note-pink-dark))",
-        },
-        "note-purple": {
-          DEFAULT: "hsl(var(--note-purple))",
-          dark: "hsl(var(--note-purple-dark))",
-        },
-        // Priority colors
-        priority: {
-          low: "hsl(var(--priority-low))",
-          medium: "hsl(var(--priority-medium))",
-          high: "hsl(var(--priority-high))",
+        category: {
+          programming: "hsl(var(--category-programming))",
+          design: "hsl(var(--category-design))",
+          business: "hsl(var(--category-business))",
+          marketing: "hsl(var(--category-marketing))",
         },
       },
       borderRadius: {

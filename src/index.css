@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,98 +6,100 @@
 
 @layer base {
   :root {
-    --background: 45 30% 98%;
-    --foreground: 220 20% 20%;
+    --background: 220 25% 97%;
+    --foreground: 220 25% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 20%;
+    --card-foreground: 220 25% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 20%;
+    --popover-foreground: 220 25% 10%;
 
-    --primary: 200 80% 50%;
+    --primary: 230 85% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 60% 95%;
-    --secondary-foreground: 220 20% 30%;
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 220 25% 20%;
 
-    --muted: 220 15% 94%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 340 70% 65%;
+    --accent: 160 70% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 70% 55%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 200 80% 50%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 230 85% 60%;
 
     --radius: 0.75rem;
 
-    /* Note color tags - Pastel palette */
-    --note-yellow: 48 100% 88%;
-    --note-yellow-dark: 48 80% 45%;
-    --note-blue: 210 100% 90%;
-    --note-blue-dark: 210 80% 50%;
-    --note-green: 140 70% 88%;
-    --note-green-dark: 140 60% 40%;
-    --note-pink: 340 80% 92%;
-    --note-pink-dark: 340 70% 55%;
-    --note-purple: 270 70% 92%;
-    --note-purple-dark: 270 60% 55%;
+    /* LMS specific colors */
+    --success: 160 70% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 200 85% 55%;
+    --info-foreground: 0 0% 100%;
 
-    /* Priority colors */
-    --priority-low: 140 60% 50%;
-    --priority-medium: 45 90% 55%;
-    --priority-high: 0 70% 55%;
+    /* Course categories */
+    --category-programming: 230 85% 60%;
+    --category-design: 340 75% 55%;
+    --category-business: 160 70% 45%;
+    --category-marketing: 38 92% 50%;
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(220 20% 20% / 0.03);
-    --shadow-md: 0 4px 6px -1px hsl(220 20% 20% / 0.05), 0 2px 4px -2px hsl(220 20% 20% / 0.05);
-    --shadow-lg: 0 10px 15px -3px hsl(220 20% 20% / 0.06), 0 4px 6px -4px hsl(220 20% 20% / 0.06);
-    --shadow-xl: 0 20px 25px -5px hsl(220 20% 20% / 0.08), 0 8px 10px -6px hsl(220 20% 20% / 0.08);
+    --shadow-sm: 0 1px 2px 0 hsl(220 25% 10% / 0.04);
+    --shadow-md: 0 4px 6px -1px hsl(220 25% 10% / 0.06), 0 2px 4px -2px hsl(220 25% 10% / 0.04);
+    --shadow-lg: 0 10px 15px -3px hsl(220 25% 10% / 0.08), 0 4px 6px -4px hsl(220 25% 10% / 0.04);
+    --shadow-xl: 0 20px 25px -5px hsl(220 25% 10% / 0.1), 0 8px 10px -6px hsl(220 25% 10% / 0.06);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(230, 85%, 60%), hsl(260, 85%, 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(160, 70%, 45%), hsl(180, 70%, 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(230, 85%, 60%) 0%, hsl(280, 80%, 50%) 50%, hsl(340, 75%, 55%) 100%);
 
     /* Sidebar variables */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 25% 20%;
+    --sidebar-primary: 230 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 96%;
+    --sidebar-accent-foreground: 220 25% 20%;
+    --sidebar-border: 220 15% 92%;
+    --sidebar-ring: 230 85% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222 30% 8%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 222 30% 12%;
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 30% 12%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    --primary: 230 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 25% 18%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --muted: 220 25% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 160 70% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 45%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 230 85% 65%;
+    --sidebar-background: 222 30% 10%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 230 85% 65%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 220 25% 15%;
+    --sidebar-accent-foreground: 210 40% 95%;
+    --sidebar-border: 220 25% 18%;
+    --sidebar-ring: 230 85% 65%;
   }
 }
 
@@ -112,36 +114,39 @@
 }
 
 @layer components {
-  .note-card {
-    @apply bg-card rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden;
+  .lms-card {
+    @apply bg-card rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-border/50;
   }
 
-  .note-card-yellow {
-    @apply bg-note-yellow border-l-4 border-note-yellow-dark;
+  .lms-gradient-bg {
+    background: var(--gradient-primary);
   }
 
-  .note-card-blue {
-    @apply bg-note-blue border-l-4 border-note-blue-dark;
-  }
-
-  .note-card-green {
-    @apply bg-note-green border-l-4 border-note-green-dark;
-  }
-
-  .note-card-pink {
-    @apply bg-note-pink border-l-4 border-note-pink-dark;
-  }
-
-  .note-card-purple {
-    @apply bg-note-purple border-l-4 border-note-purple-dark;
+  .lms-gradient-text {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .glass-effect {
     @apply bg-card/80 backdrop-blur-md;
   }
 
-  .search-input {
-    @apply bg-muted/50 border-0 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/30 transition-all duration-200;
+  .stat-card {
+    @apply bg-card rounded-xl p-6 shadow-md border border-border/50 hover:shadow-lg transition-all duration-300;
+  }
+
+  .course-card {
+    @apply bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-border/50;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-muted-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground transition-all duration-200;
+  }
+
+  .sidebar-item-active {
+    @apply bg-primary/10 text-primary font-medium;
   }
 }
 
@@ -159,34 +164,18 @@
   }
 
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes scaleIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
   }
 }
 
@@ -200,42 +189,13 @@
   content: attr(data-placeholder);
 }
 
-.ProseMirror p {
-  @apply my-2;
-}
-
-.ProseMirror h1 {
-  @apply text-2xl font-bold my-4;
-}
-
-.ProseMirror h2 {
-  @apply text-xl font-semibold my-3;
-}
-
-.ProseMirror h3 {
-  @apply text-lg font-medium my-2;
-}
-
-.ProseMirror ul {
-  @apply list-disc pl-6 my-2;
-}
-
-.ProseMirror ol {
-  @apply list-decimal pl-6 my-2;
-}
-
-.ProseMirror blockquote {
-  @apply border-l-4 border-primary/30 pl-4 italic my-4;
-}
-
-.ProseMirror code {
-  @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono;
-}
-
-.ProseMirror pre {
-  @apply bg-muted p-4 rounded-lg my-4 overflow-x-auto;
-}
-
-.ProseMirror pre code {
-  @apply bg-transparent p-0;
-}
+.ProseMirror p { @apply my-2; }
+.ProseMirror h1 { @apply text-2xl font-bold my-4; }
+.ProseMirror h2 { @apply text-xl font-semibold my-3; }
+.ProseMirror h3 { @apply text-lg font-medium my-2; }
+.ProseMirror ul { @apply list-disc pl-6 my-2; }
+.ProseMirror ol { @apply list-decimal pl-6 my-2; }
+.ProseMirror blockquote { @apply border-l-4 border-primary/30 pl-4 italic my-4; }
+.ProseMirror code { @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono; }
+.ProseMirror pre { @apply bg-muted p-4 rounded-lg my-4 overflow-x-auto; }
+.ProseMirror pre code { @apply bg-transparent p-0; }
